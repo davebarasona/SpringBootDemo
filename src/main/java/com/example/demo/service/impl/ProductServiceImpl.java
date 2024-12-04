@@ -56,7 +56,7 @@ public class ProductServiceImpl implements ProductService {
             item.setName(product.getName());
             item.setDescription(product.getDescription());
             item.setQuantity(product.getQuantity());
-            item.setType(product.getType());
+            item.setProductTypeId(product.getProductTypeId());
             item.setUnitPrice(product.getUnitPrice());
             productRepository.save(item);
             return ResponseEntity.ok().body(new ResponseVO(HttpStatus.OK.value(), "updated successfully"));

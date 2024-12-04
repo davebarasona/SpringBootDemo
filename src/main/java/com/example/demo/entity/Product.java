@@ -23,7 +23,7 @@ public class Product {
 
     private String description;
 
-    private Integer type;
+    private Integer productTypeId;
 
     private Integer quantity;
 
