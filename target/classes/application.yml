@@ -1,0 +1,9 @@
+server:
+  port: 1023
+spring:
+  application:
+    name: 'demo'
+  datasource:
+    url: 'jdbc:mysql://localhost:3306/demo?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetime'
+    username: 'root'
+    password: 'root'
