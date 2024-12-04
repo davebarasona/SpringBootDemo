@@ -1,0 +1,15 @@
+# Maven
+target/
+.mvn/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+
+# Spring Boot
+.spring-boot-devtools/
+.mvn/wrapper/
+
+# Local environment variables (optional)
+.env
