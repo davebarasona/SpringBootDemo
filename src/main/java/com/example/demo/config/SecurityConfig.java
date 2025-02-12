@@ -15,7 +15,7 @@ public class SecurityConfig {
     SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         return http
                 .authorizeHttpRequests(auth -> {
-                    auth.requestMatchers("/").permitAll(); // permit access
+                    auth.requestMatchers("/", "/v1/encrypt").permitAll(); // permit access
                     auth.anyRequest().authenticated(); // authenticated
                 })
                 .oauth2Login(Customizer.withDefaults()) // OAuth Login (Google, Facebook)
